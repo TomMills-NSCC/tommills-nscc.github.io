@@ -1,0 +1,38 @@
+<!--- Thomas Mills - WEBD1000 - Assignment 6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <!-- linking main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+<!-- adding an internal style section to the html head -->
+<style>
+p {
+    color: slategray;
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+    <header id="header">
+        <!-- adding in-line style to the page header, takes priority over the ID from the stylesheet -->
+        <h1 style="color: green; font-size: 24px;">Welcome to My Blog</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Me<span class="highlight">Important!</span></h2>
+            <!-- adding in-line style to the following paragraph (highest specificity)-->
+            <p style="color: darkgreen;">Hi, I'm a budding web developer learning CSS! I enjoy adding long text to my webpage to demonstrate how the ::first-line pseudo-element works for visitors. Try it yourself by resizing this page to make it narrower!</p>
+        </section>
+        <section>
+            <h2>My Interests</h2>
+            <p>I love <span class="highlight">coding,</span> reading, and hiking.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: <a href="mailto:">info@myblog.com</a></p>
+    </footer>
+</body>
+</html>
